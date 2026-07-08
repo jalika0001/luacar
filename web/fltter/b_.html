@@ -1,0 +1,264 @@
+<t>
+&lt;!DOCTYPE html&gt;
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/>
+    <title>长租自驾</title>
+    <!-- this is style for webpage  -->
+    <link rel="stylesheet" href="App.css"/>
+    <link rel="stylesheet" href="/web/content/336614/App.css"/>
+    <link rel="stylesheet" href="/web/content/336618/Home.css"/>
+    <link rel="stylesheet" href="web/content/337356/fitter.css"/>
+    <!-- this is font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.zuacar.com/web/content/238293/租辆车.png"/>
+    <link rel="icon" sizes="192x192" href="https://www.zuacar.com/web/content/238293/租辆车.png"/>
+    <link rel="icon" sizes="512x512" href="https://www.zuacar.com/web/content/238293/租辆车.png"/>
+    
+    <meta property="og:site_name" content="zuAcar"/>
+    <meta property="og:title" content="租辆车zuAcar-柬埔寨最专业租车网"/>
+    <meta property="og:description" content="长租自驾"/>
+    <meta property="og:image" content="https://www.zuacar.com/web/content/238293/logo_share.png"/> 
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.zuacar.com/en/long-term-rental-new?type=long-term&amp;title=%E9%95%BF%E7%A7%9F%E8%87%AA%E9%A9%BE"/>
+    <!--this is API fetch data -->
+    <script src="/web/content/336811/API.js"/>
+</head> 
+<body>
+    <!-- this is nav of webpage  -->
+    <div class="wbn-action">
+        <div class="wbna-box df-s">
+            <div class="row df-l">
+                <!-- this is action -->
+                <div class="icon icon-ra icon-sm" onclick="window.history.back()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M9.57 5.93L3.5 12l6.07 6.07M20.5 12H3.67"/></svg>
+                </div>
+                <!-- text  -->
+                <h2 id="pageTitle">安心购车服务</h2>
+            </div>
+            <div class="row df-r">
+                <div class="btn">
+                    <span>名称</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M19.92 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.08 8.95"/></svg>
+                </div>
+                <div class="btn">
+                    <span>时间</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M19.92 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.08 8.95"/></svg>
+                </div>
+                <div class="btn">
+                    <span>价格</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M19.92 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.08 8.95"/></svg>
+                </div>
+                <div class="btn" onclick="toggleFilterMenu()">
+                    <span>筛选</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <g id="style=linear"> <g id="filter-circle"> <path id="vector" d="M2 17.5H7" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path id="vector_2" d="M22 6.5H17" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path id="vector_3" d="M13 17.5H22" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path id="vector_4" d="M11 6.5H2" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path id="vector_5" d="M10 20.3999C8.34315 20.3999 7 19.0568 7 17.3999C7 15.743 8.34315 14.3999 10 14.3999C11.6569 14.3999 13 15.743 13 17.3999C13 19.0568 11.6569 20.3999 10 20.3999Z" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path id="vector_6" d="M14 9.3999C15.6569 9.3999 17 8.05676 17 6.3999C17 4.74305 15.6569 3.3999 14 3.3999C12.3431 3.3999 11 4.74305 11 6.3999C11 8.05676 12.3431 9.3999 14 9.3999Z" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> </g> </g> </g></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 长租自驾页面容器 -->
+    <main class="long-term-rental-page">
+
+        <div class="webf-bar">
+            <div class="wbfb-box">
+                <ul class="df-l">
+                    <li class="btn active"><span>全部</span></li>
+                    <li class="btn"><span>好车特价</span></li>
+                    <li class="btn"><span>可分期的车</span></li>
+                    <li class="btn"><span>一键分类</span></li>
+                    <li class="btn"><span>参数筛选</span></li>
+                    <li class="btn"><span>新下柜车</span></li>
+                    <li class="btn"><span>四驱</span></li>
+                    <li class="btn"><span>汽车综合服务</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 筛选菜单（右侧弹出式菜单） -->
+        <div class="filter-menu" id="filterMenu">
+            <div class="filter-menu-header">
+                <h2>筛选</h2>
+                <button class="close-btn" onclick="toggleFilterMenu()">
+                    <i class="fas fa-times"/>
+                </button>
+            </div>
+
+            <div class="filter-menu-content">
+                <!-- 汽车类型 -->
+                <div class="filter-group">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>汽车类型</span>
+                        <i class="fas fa-chevron-right"/>
+                    </div>
+                    <div class="filter-group-items">
+                        <label><input type="checkbox" name="carType" value="越野车"/> 越野车/SUV</label>
+                        <label><input type="checkbox" name="carType" value="轿车"/> 轿车</label>
+                        <label><input type="checkbox" name="carType" value="商务车"/> 商务车</label>
+                        <label><input type="checkbox" name="carType" value="跑车"/> 跑车</label>
+                        <label><input type="checkbox" name="carType" value="皮卡车"/> 皮卡车</label>
+                    </div>
+                </div>
+
+                <!-- 品牌 (从Odoo数据动态生成) -->
+                <div class="filter-group">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>品牌</span>
+                        <i class="fas fa-chevron-right"/>
+                    </div>
+                    <div class="filter-group-items">
+                        <!-- 动态生成品牌选项 -->
+                    </div>
+                </div>
+
+                <!-- 月租范围 -->
+                <div class="filter-group">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>月租范围</span>
+                        <i class="fas fa-chevron-right"/>
+                    </div>
+                    <div class="filter-group-items">
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <label>从 <input type="number" name="priceRangeMin" placeholder="最小值" style="width: 80px; padding: 5px;"/></label>
+                            <label>到 <input type="number" name="priceRangeMax" placeholder="最大值" style="width: 80px; padding: 5px;"/></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 燃料类型 -->
+                <div class="filter-group">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>燃料类型</span>
+                        <i class="fas fa-chevron-right"/>
+                    </div>
+                    <div class="filter-group-items">
+                        <label><input type="checkbox" name="fuelType" value="汽油"/> 汽油</label>
+                        <label><input type="checkbox" name="fuelType" value="柴油"/> 柴油</label>
+                        <label><input type="checkbox" name="fuelType" value="全混合"/> 全混合</label>
+                        <!--<label><input type="checkbox" name="fuelType" value="插电式混合动力汽车 汽油"/> 插电式混合动力汽油</label>-->
+                        <!--<label><input type="checkbox" name="fuelType" value="插电式混合动力柴油机"/> 插电式混合动力柴油</label>-->
+                        <!--<label><input type="checkbox" name="fuelType" value="CNG"/> CNG</label>-->
+                        <!--<label><input type="checkbox" name="fuelType" value="LPG"/> LPG</label>-->
+                        <!--<label><input type="checkbox" name="fuelType" value="液态氢"/> 液态氢</label>-->
+                        <label><input type="checkbox" name="fuelType" value="电子启动"/> 新能源汽车</label>
+                    </div>
+                </div>
+
+                <!-- 发动机排气量 -->
+                <div class="filter-group">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>发动机排气量 (L)</span>
+                        <i class="fas fa-chevron-right"/>
+                    </div>
+                    <div class="filter-group-items">
+                        <!-- 动态生成排气量选项 -->
+                    </div>
+                </div>
+
+                <!-- 发动机汽缸数量 -->
+                <div class="filter-group">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>发动机汽缸数量</span>
+                        <i class="fas fa-chevron-right"/>
+                    </div>
+                    <div class="filter-group-items">
+                        <!-- 动态生成汽缸数量选项 -->
+                    </div>
+                </div>
+
+                <!-- 座位数 -->
+                <div class="filter-group">
+                    <div class="filter-group-title" onclick="toggleFilterGroup(this)">
+                        <span>座位数</span>
+                        <i class="fas fa-chevron-right"/>
+                    </div>
+                    <div class="filter-group-items">
+                        <!-- 动态生成座位数选项 -->
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="filter-menu-footer">-->
+            <!--    <button class="filter-reset-btn" onclick="resetFilters()">重置</button>-->
+            <!--    <button class="filter-confirm-btn" onclick="applyFilters()">确定</button>-->
+            <!--</div>-->
+            <div class="filter-menu-footer">
+                <button class="filter-reset-btn" onclick="resetFilters()">重置</button>
+                <button class="filter-confirm-btn" onclick="applyFilters()">确定</button>
+                <button class="filter-share-btn" onclick="copyFilterLink()" title="复制筛选链接并分享">
+                    <i class="fas fa-share-alt"/>
+                </button>
+            </div>
+        </div>
+
+        <!-- 车辆卡片网格 -->
+        <div class="car-grid" id="carGrid">
+            <!-- 车辆卡片由JavaScript动态填充 -->
+        </div>
+
+        <!-- 分页控件 -->
+        <div class="pagination" id="paginationContainer">
+            <button class="pagination-btn" id="prevBtn" onclick="previousPage()">‹</button>
+            <div class="pagination-numbers" id="pageNumbers"/>
+            <button class="pagination-btn" id="nextBtn" onclick="nextPage()">›</button>
+            <span class="page-info" id="pageInfo">1 / 1</span>
+        </div>
+    </main>
+
+    <script src="https://www.zuacar.com/web/content/235601/long-term-rental.js"/>
+    <script>
+        // // 检测URL参数，如果存在 type=filter，则自动打开筛选菜单
+        function autoOpenFilterMenu() {
+            const urlParams = new URLSearchParams(window.location.search);
+            console.log('URL参数:', urlParams.get('type')); // 调试日志
+            
+            if (urlParams.get('type') === 'filter') {
+                console.log('检测到 type=filter，正在打开筛选菜单');
+                
+                const filterMenu = document.getElementById('filterMenu');
+                const filterBtn = document.querySelector('.filter-btn');
+                
+                if (filterMenu) {
+                    // // 方法1：直接设置 display
+                    filterMenu.style.display = 'block';
+                    filterMenu.classList.add('active');
+                    
+                    // 禁止背景滚动
+                    document.body.style.overflow = 'hidden';
+                    document.documentElement.style.overflow = 'hidden';
+                    
+                    // 创建遮罩层
+                    let overlay = document.querySelector('.filter-overlay');
+                    if (!overlay) {
+                        overlay = document.createElement('div');
+                        overlay.className = 'filter-overlay';
+                        overlay.style.display = 'block';
+                        document.body.appendChild(overlay);
+                        // 点击遮罩层关闭菜单
+                        overlay.onclick = toggleFilterMenu;
+                    } else {
+                        overlay.style.display = 'block';
+                    }
+                    
+                    console.log('筛选菜单已显示 (display: block)');
+                }
+                
+                if (filterBtn) {
+                    // // 方法2：添加活跃类
+                    filterBtn.classList.add('active');
+                }
+            }
+        }
+    </script>
+    <!-- this is website script for only action of webpage -->
+    <script src="/web/content/336810/script_webpage.js"/>
+    <!--this is init aside script of webpage -->
+    <script src="/web/content/336616/web_aside.js"/>
+    <script src="/web/content/336615/web_header.js"/>
+    <script src="/web/content/336617/web_foot.js"/>
+    <!--this is get data form API.js and update data to DOM -->
+    <script src="/web/content/336814/fetchCar.js"/>
+</body>
+</html>
+</t>

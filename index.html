@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/>
+    <title>租辆车-柬埔寨最专业租车网</title>
+    <!-- App css -->
+    <link rel="stylesheet" href="App.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <!-- icon font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <!-- icon website preview-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png"/>
+    <link rel="icon" sizes="192x192" href="img/favicon.png"/>
+    <link rel="icon" sizes="512x512" href="img/favicon.png"/>
+    <!--telegram and phone icon-->
+    <meta property="og:site_name" content="zuAcar"/>
+    <meta property="og:title" content="租辆车zuAcar-柬埔寨最专业租车网"/>
+    <!--<meta property="og:description" content="提供最优质的车辆租赁服务，安全便捷。"/>-->
+    <meta property="og:image" content="https://www.zuacar.com/web/content/238293/logo_share.png"/> 
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.zuacar.com/en/testing-zuacar"/>
+    <!-- google analytics    -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QPF7GGB725"/>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-QPF7GGB725');
+    </script>
+</head>
+<body>
+    
+    <!--欢迎页面 -->
+    <div class="splash-overlay" id="splashOverlay">
+        <div class="splash-container">
+            <div class="sover-time-count">逼近...</div>
+            <img src="img/splash-overlay.jpg" alt="欢迎图片" class="splash-image"/>
+        </div>
+    </div>
+
+    <!-- Aside Menu 由外部 zuahouse_aside.js 自动加载 -->
+    <div class="side-menu-main" id="side-main">
+    </div>
+
+    <div class="banner-container">
+        <div class="banner-slider" id="slider" style="transform: translateX(-100%);">
+            <img src="https://www.zuacar.com/web/content/235513/2.jpg" alt="Car 2" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;">
+            <img src="https://www.zuacar.com/web/content/236971/10.jpg" alt="Car 10" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;">
+            <img src="https://www.zuacar.com/web/content/235515/4.jpg" alt="Car 4" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;">
+            <img src="https://www.zuacar.com/web/content/235516/5.jpg" alt="Car 5" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;">
+            <img src="https://www.zuacar.com/web/content/235517/6.jpg" alt="Car 6" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;">
+            <img src="https://www.zuacar.com/web/content/233822/1.jpg" alt="Car 1" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;">
+        </div>
+        <!-- Banner 圆形分页指示器 -->
+        <div class="banner-dots-container" id="bannerDotsContainer">
+            <!-- 圆形分页点由JavaScript动态生成 -->
+        </div>
+    </div>
+
+    <section class="service-tabs">
+        <div class="tab-header">
+            <button class="active" onclick="switchTab('rent')">租辆车-热门搜索</button>
+            <button onclick="switchTab('more')">点我-更多盈信服务</button>
+        </div>
+        
+        <div id="rent-content" class="tab-grid active">
+            
+            <div class="grid-item" onclick="location.href='https://zuacar.com/'" style="cursor: pointer;">
+                <div class="icon-box"><img src="asset/240423-撸辆车图标优化-租辆车.png" alt=""/></div>
+                <p>租辆车</p>
+            </div>
+            <div class="grid-item" onclick="location.href='worry-free.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="asset/240423-撸辆车图标优化-安心购车服务.png" alt=""/></div>
+                <p>安心购车服务</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="asset/240423-撸辆车图标优化-好车特价.png" alt=""/></div>
+                <p>好车特价</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="asset/240423-撸辆车图标优化-可分期的车.png" alt=""/></div>
+                <p>可分期的车</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="asset/240423-撸辆车图标优化-新下柜车.png" alt=""/></div>
+                <p>汽车金融</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="asset/240423-撸辆车图标优化-一键分类.png" alt=""/></div>
+                <p>键分类</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="asset/240423-撸辆车图标优化-参数筛选.png" alt=""/></div>
+                <p>参数筛选</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="asset/240423-撸辆车图标优化-新下柜车.png" alt=""/></div>
+                <p>新下柜车</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="asset/240423-撸辆车图标优化-四驱.png" alt=""/></div>
+                <p>四驱</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="asset/240423-撸辆车图标优化-汽车综合服务.png" alt=""/></div>
+                <p>汽车综合服务</p>
+            </div>
+        </div>
+
+         <div id="more-content" class="tab-grid">
+            <div class="grid-item" onclick="window.location.href='https://m.fi855.com/';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234306/1.png" alt=""/></div>
+                <p>盈信官网</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='https://www.zuahouse.com/en';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/265875/租个房_zuAhouse.png" alt=""/></div>
+                <p>租个房</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='https://m.luacar.com/';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234307/2撸辆车.png" alt=""/></div>
+                <p>买车-撸辆车</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='https://m.fi855.com/col.jsp?id=113';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234308/3盈信金融.png" alt=""/></div>
+                <p>盈信汽车金融</p>
+            </div>
+            <!--<div class="grid-item" onclick="window.location.href='https://m.luahouse.com/';" style="cursor: pointer;">-->
+            <!--    <div class="icon-box"><img src="https://www.zuacar.com/web/content/234309/4撸个房.png" alt=""/></div>-->
+            <!--    <p>撸个房</p>-->
+            <!--</div>-->
+            <div class="grid-item" onclick="window.location.href='https://m.fi855.com/col.jsp?id=117';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234310/5财税.png" alt=""/></div>
+                <p>盈信财税</p>
+            </div>
+            <div class="grid-item" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234311/6盈信企程.png" alt=""/></div>
+                <p>盈信企程</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='https://m.fi855.com/col.jsp?id=121';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234312/7盈信证照.png" alt=""/></div>
+                <p>盈信证照</p>
+            </div>
+            <!--<div class="grid-item" style="cursor: pointer;">-->
+            <!--    <div class="icon-box"><img src="https://www.zuacar.com/web/content/234313/8盈信商旅.png" alt=""/></div>-->
+            <!--    <p>盈信商旅</p>-->
+            <!--</div>-->
+        </div>
+    </section>
+
+    <!-- this is middle logo -->
+    <section class="midlogo-section">
+        <div class="midlogo-container">
+            <img class="midlogo" src="adv.png" alt="" style=" margin: -10px 1px; width: 100%;"/>
+        </div>
+    </section>
+
+    <main class="car-details">
+        
+        <div class="car-grid" id="carGrid">
+            <div class="car-card" data-car-id="2165" data-field-id="CVAN1689">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CVAN1689/1.jpg" alt="S400" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2015 up 2020 S400</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">轿车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">奔驰 Mercedes</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">CVAN1689</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">1,500 - 2,000</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(2165, 'CVAN1689')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="4325" data-field-id="SMN1G6767">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/SMN1G6767/1.jpg" alt="LX570" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2019 LX570</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">越野车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">雷克萨斯 Lexus</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">SMN1G6767</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">3,000 - 3,500</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(4325, 'SMN1G6767')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="5991" data-field-id="LNCP2A94">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/LNCP2A94/1.jpg" alt="斯塔瑞斯 Starex" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2010 斯塔瑞斯 Starex</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">商务车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">现代 Hyundai</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">LNCP2A94</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">450 - 500</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(5991, 'LNCP2A94')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="5352" data-field-id="CPHK8A12">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CPHK8A12/1.jpg" alt="普锐斯 Prius" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2005 普锐斯 Prius</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">轿车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">丰田 Toyota</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">CPHK8A12</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">330 - 380</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(5352, 'CPHK8A12')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="5354" data-field-id="PSAL0A26">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/PSAL0A26/1.jpg" alt="普锐斯 Prius" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2005 普锐斯 Prius</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">轿车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">丰田 Toyota</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">PSAL0A26</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">330 - 380</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(5354, 'PSAL0A26')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="2002" data-field-id="BOBR5A0A7">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/BOBR5A0A7/1.jpg" alt="HS 250H" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2010 HS 250H</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">轿车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">雷克萨斯 Lexus</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">BOBR5A0A7</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">700 - 750</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(2002, 'BOBR5A0A7')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="4216" data-field-id="NDEM9A0A2">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/NDEM9A0A2/1.jpg" alt="汉兰达 Highlander" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2003 汉兰达 Highlander</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">越野车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">丰田 Toyota</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">NDEM9A0A2</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">500 - 550</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(4216, 'NDEM9A0A2')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="5159" data-field-id="VSML7A8B9">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/VSML7A8B9/1.jpg" alt="Q7" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2013 Q7</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">越野车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">奥迪 Audi</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">VSML7A8B9</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">900 - 1,000</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(5159, 'VSML7A8B9')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="5551" data-field-id="SENK3A2C8">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/SENK3A2C8/1.jpg" alt="X4" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2014 X4</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">轿车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">宝马 BMW</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">SENK3A2C8</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">1,500 - 1,800</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(5551, 'SENK3A2C8')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="222" data-field-id="TIMB3A6C6">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/TIMB3A6C6/1.jpg" alt="RX350" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2010 up 2015 RX350</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">越野车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">雷克萨斯 Lexus</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">TIMB3A6C6</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">700 - 800</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(222, 'TIMB3A6C6')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="4809" data-field-id="RNAD0A0D1">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/RNAD0A0D1/1.jpg" alt="X5" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2015 X5</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">越野车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">宝马 BMW</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">RNAD0A0D1</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">1,500 - 1,800</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(4809, 'RNAD0A0D1')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="5055" data-field-id="MASO3A6D6">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/MASO3A6D6/1.jpg" alt="Range Rover" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2014 Range Rover</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">越野车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">路虎 Land Rover</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">MASO3A6D6</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">1,600 - 1,800</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(5055, 'MASO3A6D6')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="879" data-field-id="PBBN7A9D6">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/PBBN7A9D6/1.jpg" alt="A7" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2012 A7</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">轿车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">奥迪 Audi</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">PBBN7A9D6</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">1,000 - 1,200</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(879, 'PBBN7A9D6')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="5995" data-field-id="LNCBAE4650">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/LNCBAE4650/1.jpg" alt="斯塔瑞斯 Starex" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2009 斯塔瑞斯 Starex</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">商务车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">现代 Hyundai</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">LNCBAE4650</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">450 - 500</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(5995, 'LNCBAE4650')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="368" data-field-id="SPAT0A1E6">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/SPAT0A1E6/1.jpg" alt="GS300" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2006 GS300</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">商务车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">雷克萨斯 Lexus</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">SPAT0A1E6</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">500 - 550</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(368, 'SPAT0A1E6')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="3169" data-field-id="JXBG3A9F9">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/JXBG3A9F9/1.jpg" alt="陆巡 Land Cruiser" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2010 UP 2021 陆巡 Land Cruiser</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">越野车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">丰田 Toyota</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">JXBG3A9F9</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">1,000 - 1,300</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(3169, 'JXBG3A9F9')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="1715" data-field-id="RNAD6A4F7">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/RNAD6A4F7/1.jpg" alt="GS300" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2006 GS300</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">轿车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">雷克萨斯 Lexus</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">RNAD6A4F7</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">500 - 550</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(1715, 'RNAD6A4F7')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="3234" data-field-id="NDEM3A6H3">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/NDEM3A6H3/1.jpg" alt="RX330" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2005 RX330</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">越野车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">雷克萨斯 Lexus</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">NDEM3A6H3</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">500 - 600</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(3234, 'NDEM3A6H3')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="5160" data-field-id="VSML2A9I9">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/VSML2A9I9/1.jpg" alt="Range Rover" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2014 Range Rover</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">越野车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">路虎 Land Rover</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">VSML2A9I9</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">1,600 - 1,800</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(5160, 'VSML2A9I9')">查看更多信息</button>
+                </div>
+            </div>
+        
+            <div class="car-card" data-car-id="4472" data-field-id="CPHK3A3I7">
+                <div class="car-image-container">
+                    <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CPHK3A3I7/1.jpg" alt="汉兰达 Highlander" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;">
+                </div>
+                <div class="car-info">
+                    <h3 class="car-name">2003 汉兰达 Highlander</h3>
+                    <div class="car-specs">
+                        
+            <div class="spec-item">
+                <div class="spec-label">汽车类型</div>
+                <div class="spec-value">越野车</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">品牌</div>
+                <div class="spec-value">丰田 Toyota</div>
+            </div>
+
+            <div class="spec-item">
+                <div class="spec-label">编码</div>
+                <div class="spec-value">CPHK3A3I7</div>
+            </div>
+            
+            <div class="spec-item">
+                <div class="spec-label">具体价格：</div>
+                <div class="spec-value">详询客服</div>
+            </div>
+        
+                    </div>
+                    <div class="car-price">
+                        <div class="price-text">500 - 550</div>
+                        <div class="price-label">月租范围</div>
+                    </div>
+                    <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(4472, 'CPHK3A3I7')">查看更多信息</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pagination" id="paginationContainer">
+            <button class="pagination-btn" id="prevBtn" onclick="previousPage()" disabled="">‹</button>
+            <div class="pagination-numbers" id="pageNumbers"><button class="page-btn active">1</button><button class="page-btn">2</button><span style="padding: 8px 4px;">...</span><button class="page-btn">66</button></div>
+            <button class="pagination-btn" id="nextBtn" onclick="nextPage()">›</button>
+            <span class="page-info" id="pageInfo">1 / 66</span>
+        </div>
+
+       <div class="faq-section">
+            <h2 class="faq-title">租车流程 &amp; 关于我们</h2>
+            <div class="faq-item" onclick="window.location.href='https://www.zuacar.com/en/zuacar-question-page1'" style="cursor: pointer;">
+                <div class="faq-question">
+                    <h4>汽车过户年检路税服务</h4>
+                    <blockquote>
+                        <p>盈信汽车为您提供 过户年检路税等一站式汽车手续服务。1、年检代办。服务说明：盈信可提供上门接送服务，您只需联系我们，足不出户即可完成爱车年检。代办费：年检代办费用为30$ /辆。如需市区内上门取送，加收50$取送费用。(以上费用不含政府收费，如果需要通关小费须由车主承担）需要资料：行驶证高清照片，车子。2、路税办理。代办费：路税代办费用为30$/辆（不含路税费用，不含路税卡代办费用，一次办理...</p>
+                    </blockquote>
+                </div>
+                <img src="img/favicon.png" alt="logo" style="width: 40px; height: auto; opacity: 1; transition: opacity 0.8s ease-in-out;" loading="lazy">
+            </div>
+            <div class="faq-item" onclick="window.location.href='https://www.zuacar.com/en/zuacar-question-page2'" style="cursor: pointer;">
+                <div class="faq-question">
+                    <h4>汽车维修美容服务</h4>
+                    <blockquote>
+                        <p>盈信汽车部为您提供 汽车维修保养美容装潢服务。1、汽车维修服务2、美容装潢服务3、轮胎维保替换服务4、上门救援服务盈信汽车，是您的最可信赖的用车伙伴！</p>
+                    </blockquote>
+                </div>
+                <img src="img/favicon.png" alt="logo" style="width: 40px; height: auto; opacity: 1; transition: opacity 0.8s ease-in-out;" loading="lazy">
+            </div>
+            <div class="faq-item" onclick="window.location.href='https://www.zuacar.com/en/zuacar-question-page3'" style="cursor: pointer;">
+                <div class="faq-question">
+                    <h4>撸辆车的介绍</h4>
+                    <blockquote>
+                        <p>撸辆车LuAcar，全柬最大的中文二手车平台，由资深服务品牌“盈信商业服务”倾力打造。盈信商业打造的专业购车平台“撸辆车LuAcar",（“撸” 和柬语“លក់/卖“谐音，同时在中文里是“给买方最大优惠”的意思），和盈信旗下的“租辆车zuAcar“一起为用户提供车辆服务，是全柬最大的中文购车和全柬最大的租车平台。撸辆车，提供全柬最大的二手车库，在线搜寻和引导服务。撸辆车承诺：0差价直购！更有...</p>
+                    </blockquote>
+                </div>
+                <img src="img/favicon.png" alt="logo" style="width: 40px; height: auto; opacity: 1; transition: opacity 0.8s ease-in-out;" loading="lazy">
+            </div>
+            <div class="faq-item" onclick="window.location.href='https://www.zuacar.com/en/zuacar-question-page3'" style="cursor: pointer;">
+                <div class="faq-question">
+                    <h4>撸辆车LuAcar “安心服务包”</h4>
+                    <blockquote>
+                       <p> 撸辆车LuAcar，全柬最大的二手车中文平台，由资深服务品牌“盈信商业服务”倾力打造。柬埔寨二手车市场的特点：1、老车多，车况良莠不齐；2、历史遗留问题多，很多车手续不齐，难以过户；3、过户交易基本走代理通道，风险大。4、车市分散，全国数百家二手车商提供70%以上的车辆交易。因此买二手车的时候，需要做到：在数百家车商中寻找合适车辆、规避车况风险、甄别手续避坑、挑选合适的过户代理商。对外国人来...</p>
+                    </blockquote>
+                </div>
+                <img src="img/favicon.png" alt="logo" style="width: 40px; height: auto; opacity: 1; transition: opacity 0.8s ease-in-out;" loading="lazy">
+            </div>
+        </div>
+    </main>
+    
+    <div class="wb-main-action">
+        <div class="wbma-box">
+            <div class="icon icon-ra icon-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M18.07 9.57L12 3.5 5.93 9.57M12 20.5V3.67"></path></svg>
+            </div>
+            <div class="icon icon-ra icon-sm">
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M21.97 18.33c0 .36-.08.73-.25 1.09-.17.36-.39.7-.68 1.02-.49.54-1.03.93-1.64 1.18-.6.25-1.25.38-1.95.38-1.02 0-2.11-.24-3.26-.73s-2.3-1.15-3.44-1.98a28.75 28.75 0 0 1-3.28-2.8 28.414 28.414 0 0 1-2.79-3.27c-.82-1.14-1.48-2.28-1.96-3.41C2.24 8.67 2 7.58 2 6.54c0-.68.12-1.33.36-1.93.24-.61.62-1.17 1.15-1.67C4.15 2.31 4.85 2 5.59 2c.28 0 .56.06.81.18.26.12.49.3.67.56l2.32 3.27c.18.25.31.48.4.7.09.21.14.42.14.61 0 .24-.07.48-.21.71-.13.23-.32.47-.56.71l-.76.79c-.11.11-.16.24-.16.4 0 .08.01.15.03.23.03.08.06.14.08.2.18.33.49.76.93 1.28.45.52.93 1.05 1.45 1.58.54.53 1.06 1.02 1.59 1.47.52.44.95.74 1.29.92.05.02.11.05.18.08.08.03.16.04.25.04.17 0 .3-.06.41-.17l.76-.75c.25-.25.49-.44.72-.56.23-.14.46-.21.71-.21.19 0 .39.04.61.13.22.09.45.22.7.39l3.31 2.35c.26.18.44.39.55.64.1.25.16.5.16.78Z" stroke="#FF8A65" stroke-width="1.5" stroke-miterlimit="10"></path><path d="M18.5 9c0-.6-.47-1.52-1.17-2.27-.64-.69-1.49-1.23-2.33-1.23M22 9c0-3.87-3.13-7-7-7" stroke="#FF8A65" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            let timeLeft = 3; 
+            
+            const overlay = document.getElementById('splashOverlay');
+            const countdownElement = document.querySelector('.sover-time-count');
+
+            const timer = setInterval(() => {
+                timeLeft--;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    document.body.style.overflow = 'auto';
+                    overlay.classList.add('hidden');
+                } else {
+                    countdownElement.textContent = `逼近 ${timeLeft}s...`;
+                }
+            }, 1000);
+        });
+    </script>
+    <!-- this is website script for only action of webpage -->
+    <script src="js/script_webpage.js"></script>
+    <!--this is init aside script of webpage -->
+    <script src="js/web_aside.js"></script>
+    <script src="js/web_header.js"></script>
+    <script src="js/web_foot.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>租辆车-柬埔寨最专业租车网</title>
+    <!-- this is style for webpage -->
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/charter.css">
+    <link rel="stylesheet" href="/css/reservation.css">
+    <!-- this is font awesome 6.0.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://www.zuacar.com/web/content/233615/api.js"></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.zuacar.com/web/content/238293/租辆车.png">
+    <link rel="icon" sizes="192x192" href="https://www.zuacar.com/web/content/238293/租辆车.png">
+    <link rel="icon" sizes="512x512" href="https://www.zuacar.com/web/content/238293/租辆车.png">
+    
+    <meta property="og:site_name" content="zuAcar">
+    <meta property="og:description" content="商务包车">
+    <meta property="og:title" content="租辆车zuAcar-柬埔寨最专业租车网">
+    <meta property="og:image" content="https://www.zuacar.com/web/content/238293/logo_share.png"> 
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zuacar.com/en/zuacar-charter-car">
+</head>
+<body>
+    <div style="display:none;">
+    	<img src="https://www.zuacar.com/web/content/238293/logo_share.png" alt="share_icon">
+    </div>
+
+      <div class="banner-container">
+          <div class="banner-slider" id="slider">
+              <img src="https://www.zuacar.com/web/content/235518/7.jpg" alt="Car 1"/>
+              <img src="https://www.zuacar.com/web/content/236970/9.jpg" alt="Car 2"/>
+              <img src="https://www.zuacar.com/web/content/236969/8.jpg" alt="Car 3"/>
+              <img src="https://www.zuacar.com/web/content/235514/3.jpg" alt="Car 4"/>
+              <img src="https://www.zuacar.com/web/content/235515/4.jpg" alt="Car 5"/>
+              <img src="https://www.zuacar.com/web/content/235516/5.jpg" alt="Car 6"/>
+              <img src="https://www.zuacar.com/web/content/235517/6.jpg" alt="Car 7"/>
+              <img src="https://www.zuacar.com/web/content/233822/1.jpg" alt="Car 8"/>
+          </div>
+          <!-- Banner 圆形分页指示器 -->
+          <div class="banner-dots-container" id="bannerDotsContainer">
+              <!-- 圆形分页点由JavaScript动态生成 -->
+          </div>
+      </div>
+
+      <section class="service-section">
+          <h2 class="section-title">预约下单</h2>
+          <p class="section-subtitle">专业租车服务，畅行柬埔寨</p>
+
+          <div class="service-grid">
+              <div class="service-card">
+                  <div class="service-content">
+                      <h3>商务考察预约下单</h3>
+                      <p>提供 商务考察预约下单服务，专为企业、投资人及外籍客户设计，支持提前预订、专车接送、灵活行程，确保商务考察行程高效、有序进行。</p>
+                      <p>一站式预约，让商务考察更高效</p>
+                  </div>
+                  <img src="https://www.zuacar.com/web/content/228697/商务包车-商务考察预约下单.jpg" alt="商务考察">
+                  <button class="service-btn">立即预约</button>
+              </div>
+              
+              <div class="service-card">
+                  <div class="service-content">
+                      <h3>城际的士预约下单</h3>
+                      <p>提供 城际的士预约下单服务，支持提前预订，固定路线或个性化行程，适合商务出行、跨省办事、机场衔接及家庭出行。</p><br>
+                      <p>一键预约，城际出行更轻松</p>
+                  </div>
+                  <img src="https://www.zuacar.com/web/content/228699/商务包车-城际的士预约下单.jpg" alt="城际的士">
+                  <button class="service-btn">立即预约</button>
+              </div>
+
+              <div class="service-card">
+                  <div class="service-content">
+                      <h3>搬家货运预约下单</h3>
+                      <p>提供 搬家货运预约下单服务，支持提前预订车辆与时间，适用于家庭搬家、公司搬迁、货物运输及临时用车需求，让搬运更高效、更省力。</p> 
+                      <p>一键预约，搬运更省心</p> 
+                  </div>
+                  <img src="https://www.zuacar.com/web/content/228698/商务包车-搬家货运预约下单.webp" alt="搬家货运">
+                  <button class="service-btn">立即预约</button>
+              </div>
+          </div>
+      </section>
+      
+      <div class="page-content reservation-form-root" style="display: none;">
+          <div class="rf-form-container">
+            <form id="intercityForm">
+              <div class="rf-header-form">
+                <button class="rf-back-btn" type="button"><i class="fa-solid fa-arrow-left-long"></i></button>
+                <h2>城际的士预约下单</h2>
+                <div class="rf-header-right"></div>
+              </div>
+              <p>一键预约，城际出行更轻松</p>
+          
+              <div class="rf-input-group">
+                <label>您的昵称 :</label>
+                <input type="text" name="x_name" placeholder="请问您怎么称呼？" required="required">
+              </div>
+          
+              <div class="rf-checkbox-section">
+                <label>请问您的出发城市？ :</label>
+                <div class="rf-checkbox-grid rf-double-col">
+                  <label><input type="radio" name="x_start_city" value="1"> 金边</label>
+                  <label><input type="radio" name="x_start_city" value="2"> 西港</label>
+                  <label><input type="radio" name="x_start_city" value="3"> 暹粒</label>
+                  <label><input type="radio" name="x_start_city" value="4"> 木牌</label>
+                  <label><input type="radio" name="x_start_city" value="5"> 财通</label>
+                  <label><input type="radio" name="x_start_city" value="6"> 波贝</label>
+                  <label><input type="radio" name="x_start_city" value="7"> 贡布</label>
+                  <label><input type="radio" name="x_start_city" value="8"> 菩萨</label>
+                  <label><input type="radio" name="x_start_city" value="9"> 拜林</label>
+                  <label><input type="radio" name="x_start_city" value="10"> 七星海</label>
+                  <label><input type="radio" name="x_start_city" value="11"> 其他地区</label>
+                </div>
+              </div>
+              
+              <div class="rf-checkbox-section">
+                <label>请问您的到达城市？</label>
+                <div class="rf-checkbox-grid rf-double-col">
+                  <label><input type="radio" name="x_arrive_city" value="1"> 金边</label>
+                  <label><input type="radio" name="x_arrive_city" value="2"> 西港</label>
+                  <label><input type="radio" name="x_arrive_city" value="3"> 暹粒</label>
+                  <label><input type="radio" name="x_arrive_city" value="4"> 木牌</label>
+                  <label><input type="radio" name="x_arrive_city" value="5"> 财通</label>
+                  <label><input type="radio" name="x_arrive_city" value="6"> 波贝</label>
+                  <label><input type="radio" name="x_arrive_city" value="7"> 贡布</label>
+                  <label><input type="radio" name="x_arrive_city" value="8"> 菩萨</label>
+                  <label><input type="radio" name="x_arrive_city" value="9"> 拜林</label>
+                  <label><input type="radio" name="x_arrive_city" value="10"> 七星海</label>
+                  <label><input type="radio" name="x_arrive_city" value="11"> 其他地区</label>
+                </div>
+              </div>
+              
+              <div class="rf-input-group">
+                <label>请选择送车的日期，我们将联系您约定具体时间 :</label>
+                <input type="datetime-local" name="x_start_date" placeholder="方便我们派单">
+              </div>  
+              
+              <div class="rf-checkbox-section">
+                <label>请输入您的意向车型 (非必填,可多选)我们会联系您确认 </label>
+                <div class="rf-checkbox-grid rf-double-col">
+                  <label><input type="checkbox" name="x_noted" value="普锐斯"> 普锐斯</label>
+                  <label><input type="checkbox" name="x_noted" value="汉兰达/RX300"> 汉兰达/RX300</label>
+                  <label><input type="checkbox" name="x_noted" value="普通阿尔法"> 普通阿尔法</label>
+                  <label><input type="checkbox" name="x_noted" value="新款阿尔法"> 新款阿尔法</label>
+                  <label><input type="checkbox" name="x_noted" value="普通商务车"> 普通商务车</label>
+                  <label><input type="checkbox" name="x_noted" value="中巴车"> 中巴车</label>
+                  <label><input type="checkbox" name="x_noted" value="其他车型"> 其他车型</label>
+                </div>
+              </div>
+              
+              <div class="rf-checkbox-section">
+                <label>请问您常用的联系方式 :</label>
+                <div class="rf-checkbox-grid rf-single-col">
+                  <label><input type="radio" name="x_contact" value="1"> 电报（Telegram)</label>
+                  <label><input type="radio" name="x_contact" value="2"> 微信（WeChat）</label>
+                  <label><input type="radio" name="x_contact" value="3"> 拨打电话</label>
+                </div>
+              </div>
+              
+              <div class="rf-input-group">
+                <label>请输入您的账号ID/手机号</label>
+                <input type="tel" name="x_contact_ids" placeholder="方便我们联系您">
+              </div>
+              
+              <button type="submit" class="rf-submit-btn">提交</button>
+            </form>
+          </div>       
+        </div>
+
+        <!-- Charter Form -->
+        <div class="page-content reservation-form-root" style="display: none;">
+          <div class="rf-form-container">
+            <form id="charterForm">
+              <div class="rf-header-form">
+                <button class="rf-back-btn" type="button"><i class="fa-solid fa-arrow-left-long"></i></button>
+                <h2>商务考察预约下单</h2>
+                <div class="rf-header-right"></div>
+              </div>
+              <p>一站式预约，让商务考察更高效</p>
+          
+              <div class="rf-input-group">
+                <label>您的昵称 :</label>
+                <input type="text" name="x_name" placeholder="请问您怎么称呼？" required="required">
+              </div>
+          
+              <div class="rf-checkbox-section">
+                <label>请确定您意向的车辆种类（可多选）</label>
+                <div class="rf-checkbox-grid rf-double-col">
+                  <label><input type="checkbox" name="x_type_cars" value="新款阿尔法"> 新款阿尔法</label>
+                  <label><input type="checkbox" name="x_type_cars" value="普通阿尔法"> 普通阿尔法</label>
+                  <label><input type="checkbox" name="x_type_cars" value="普通商务车"> 普通商务车</label>
+                  <label><input type="checkbox" name="x_type_cars" value="大型越野车"> 大型越野车</label>
+                  <label><input type="checkbox" name="x_type_cars" value="中型越野车"> 中型越野车</label>
+                  <label><input type="checkbox" name="x_type_cars" value="高级轿车"> 高级轿车</label>
+                  <label><input type="checkbox" name="x_type_cars" value="中级轿车"> 中级轿车</label>
+                  <label><input type="checkbox" name="x_type_cars" value="普通轿车"> 普通轿车</label>
+                  <label><input type="checkbox" name="x_type_cars" value="中巴车"> 中巴车</label>
+                  <label><input type="checkbox" name="x_type_cars" value="大巴车"> 大巴车</label>
+                  <label><input type="checkbox" name="x_type_cars" value="其他车型"> 其他车型</label>
+                </div>
+              </div>
+              
+              <div class="rf-input-group">
+                <label>请确定您的开始用车时间 </label>
+                <input type="datetime-local" name="x_start_date" placeholder="便于我们排单和报价" required="required">
+              </div>  
+              
+              <div class="rf-input-group">
+                <label>请确定您的结束用车时间</label>
+                <input type="datetime-local" name="x_end_date" placeholder="便于我们排单和报价" required="required">
+              </div> 
+              
+              <div class="rf-checkbox-section">
+                <label>请问您的出发城市？</label>
+                <div class="rf-checkbox-grid rf-double-col">
+                  <label><input type="radio" name="x_start_city" value="1"> 金边</label>
+                  <label><input type="radio" name="x_start_city" value="2"> 西港</label>
+                  <label><input type="radio" name="x_start_city" value="3"> 暹粒</label>
+                  <label><input type="radio" name="x_start_city" value="4"> 其他地区</label>
+                </div>
+              </div>
+              
+              <div class="rf-input-group">
+                <label>请确定您的发车位置（例如某酒店、某地标建筑等）</label>
+                <input type="text" name="x_wait_location" placeholder="我们会联系您确认" required="required">
+              </div>
+              
+              <div class="rf-input-group">
+                <label>请描述您的行程去向，便于我们安排精准报价</label>
+                <input type="text" name="x_place" placeholder="例如:去某特区,下午回金边,晚餐后回酒店" required="required">
+              </div>
+              
+              <div class="rf-input-group">
+                <label>需要乘坐包车的人数（非必填）</label>
+                <input type="text" name="x_persons" placeholder="">
+              </div>
+              
+              <div class="rf-checkbox-section">
+                <label>您对司机语言的要求（中文越好，价格越高）:</label>
+                <div class="rf-checkbox-grid rf-single-col">
+                  <label><input type="radio" name="x_driver" value="1"> 中文良好</label>
+                  <label><input type="radio" name="x_driver" value="2"> 会简单中文</label>
+                  <label><input type="radio" name="x_driver" value="3"> 英文良好</label>
+                  <label><input type="radio" name="x_driver" value="4"> 会简单英文</label>
+                  <label><input type="radio" name="x_driver" value="5"> 无语言要求</label>
+                </div>
+              </div>
+              
+              <div class="rf-input-group">
+                <label>对司机的其他要求</label>
+                <input type="text" name="x_driver_note" placeholder="让我们更好地服务您">
+              </div>
+              
+              <div class="rf-input-group">
+                <label>对车辆的其他要求</label>
+                <input type="text" name="x_car_note" placeholder="让我们更好地服务您">
+              </div>
+              
+              <div class="rf-input-group">
+                <label>您的其他要求</label>
+                <input type="text" name="x_other_note" placeholder="让我们更好地服务您">
+              </div>
+              
+              <div class="rf-checkbox-section">
+                <label>请问您常用的联系方式 :</label>
+                <div class="rf-checkbox-grid rf-single-col">
+                  <label><input type="radio" name="x_contact" value="1"> 电报（Telegram)</label>
+                  <label><input type="radio" name="x_contact" value="2"> 微信（WeChat）</label>
+                  <label><input type="radio" name="x_contact" value="3"> 拨打电话</label>
+                </div>
+              </div>
+              
+              <div class="rf-input-group">
+                <label>请输入您的账号ID/手机号</label>
+                <input type="tel" name="x_contact_ids" placeholder="方便我们联系您" required="required">
+              </div>
+              
+              <button type="submit" class="rf-submit-btn">提交</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Moving Form -->
+        <div class="page-content reservation-form-root" style="display: none;">
+          <div class="rf-form-container">
+            <form id="movingForm">
+              <div class="rf-header-form">
+                <button class="rf-back-btn" type="button"><i class="fa-solid fa-arrow-left-long"></i></button>
+                <h2>搬家货运预约下单</h2>
+                <div class="rf-header-right"></div>
+              </div>
+              <p>一键预约，搬运更省心</p>
+          
+              <div class="rf-input-group">
+                <label>您的昵称 :</label>
+                <input type="text" name="x_name" placeholder="请问您怎么称呼？" required="required">
+              </div>
+          
+              <div class="rf-input-group">
+                <label>请填写您要搬到的地址</label>
+                <input type="text" name="x_location" placeholder="方便我们为您安排" required="required">
+              </div>
+              
+              <div class="rf-input-group">
+                <label>请确定您的出发时间</label>
+                <input type="datetime-local" name="x_start_date" placeholder="方便我们派单" required="required">
+              </div>
+              
+              <div class="rf-checkbox-section">
+                <label>请问您常用的联系方式 </label>
+                <div class="rf-checkbox-grid rf-single-col">
+                  <label><input type="radio" name="x_contact" value="1"> 电报（Telegram)</label>
+                  <label><input type="radio" name="x_contact" value="2"> 微信（WeChat）</label>
+                  <label><input type="radio" name="x_contact" value="3"> 拨打电话</label>
+                </div>
+              </div>
+              
+              <div class="rf-input-group">
+                <label>请输入您的账号ID/手机号</label>
+                <input type="tel" name="x_contact_ids" placeholder="方便我们联系您" required="required">
+              </div>
+                                  
+              <button type="submit" class="rf-submit-btn">提交</button>
+            </form>
+          </div>
+        </div>
+
+    <script src="https://www.zuacar.com/web/content/233636/script.js"></script>
+    <script src="https://www.zuacar.com/web/content/236351/zuacar-city-reservation-form-home.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Get all service buttons
+          const buttons = document.querySelectorAll(".service-btn");
+          // Get the service section (first section)
+          const serviceSection = document.querySelector(".service-section");
+          // Get all page-content sections (the reservation forms)
+          const pageContents = document.querySelectorAll(".page-content");
+          // Get all back buttons (both old and new)
+          const backButtons = document.querySelectorAll(".back-btn, .rf-back-btn");
+          // Service button click handlers
+          buttons.forEach((button, index) => {
+              button.addEventListener("click", function () {
+                  // Hide service section
+                  if (serviceSection) {
+                      serviceSection.style.display = "none";
+                  }
+                  pageContents.forEach(section => {
+                      section.style.display = "none";
+                      section.classList.remove("page-content-active");
+                  });
+                  // Show the corresponding page-content (index matches button order)
+                  if (pageContents[index]) {
+                      pageContents[index].style.display = "block";
+                      pageContents[index].classList.add("page-content-active");
+                      pageContents[index].scrollIntoView({ behavior: "smooth" });
+                  }
+              });
+          });
+          // Back button click handlers
+          backButtons.forEach((button) => {
+              button.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  // Hide all page-content sections
+                  pageContents.forEach(section => {
+                      section.style.display = "none";
+                      section.classList.remove("page-content-active");
+                  });
+                  // Show the service section
+                  if (serviceSection) {
+                      serviceSection.style.display = "block";
+                  }
+                  // Reset any forms when going back
+                  const forms = document.querySelectorAll('.page-content form');
+                  forms.forEach(form => {
+                      if (form) {
+                          form.reset();
+                      }
+                  });
+              });
+          });
+          // Initially show only the service section
+          if (serviceSection) {
+              serviceSection.style.display = "block";
+          }
+          pageContents.forEach(section => {
+              section.style.display = "none";
+          });
+      });
+  </script>
+
+    <!--this is init aside script of webpage -->
+    <script src="js/web_aside.js"></script>
+    <script src="js/web_header.js"></script>
+    <script src="js/web_foot.js"></script>
+</body>
+</html>

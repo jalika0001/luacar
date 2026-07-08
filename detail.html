@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Detail</title>
+    <!-- App css -->
+    <link rel="stylesheet" href="App.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+    <div class="web-main-detail wbml db-c">
+        <div class="wbml-box">
+            <!-- this is nav bar for webpage  -->
+            <div class="dt-n">
+                <div class="dtn-box df-s">
+                    <div class="icon icon-ra icon-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M9.57 5.93L3.5 12l6.07 6.07M20.5 12H3.67"/></svg>
+                    </div>
+                    <!-- product name  -->
+                    <div class="txt">
+                        <h2>房源详情</h2>
+                    </div>
+                    <!-- button for share  -->
+                    <div class="btn" onclick="document.querySelector('.sg-msh').classList.toggle('active')">
+                        <svg height="200px" width="200px" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M512,230.431L283.498,44.621v94.807C60.776,141.244-21.842,307.324,4.826,467.379 c48.696-99.493,149.915-138.677,278.672-143.14v92.003L512,230.431z"></path> </g> </g></svg>
+                        <span>分享</span>
+                    </div>
+                </div>
+            </div>
+            <!-- this content for show product item detail  -->
+            <div class="dt-c">
+                <div class="dtc-box">
+                    <!-- this is row for show product item detail -->
+                    <div class="dtc-s9">
+                        <div class="dtch-box df-s">
+                            <!-- this is row main show images  for product item detail -->
+                            <div class="row rs-main">
+                                <div class="row-box">
+                                    <!-- this is slider show  -->
+                                    <ul class="df-c">
+                                        <li>
+                                            <img class="img-c" src="img/car.jpg" alt=""/>
+                                        </li>
+                                        <li>
+                                           <img class="img-c" src="img/car.jpg" alt=""/>
+                                        </li>
+                                    </ul>
+                                    <!-- this button next and prev slider  -->
+                                    <div class="action">
+                                        <div class="an-box df-c">
+                                            <div class="icon icon-ra icons-sm btn-prev unactive">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M15 19.92L8.48 13.4c-.77-.77-.77-2.03 0-2.8L15 4.08"/></svg>
+                                            </div>
+                                            <div class="list-dada">
+                                                <span class="active"/>
+                                                <span/>
+                                            </div>
+                                            <div class="icon icon-ra icons-sm btn-next">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M8.91 19.92l6.52-6.52c.77-.77.77-2.03 0-2.8L8.91 4.08"/></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- this is text slide count -->
+                                    <div class="tsc"><span>1 / 2</span></div>
+                                </div>
+                                <div class="rs-aside">
+                                    <div class="rsa-box">
+                                        <ul class="df-l">
+                                            <li class="active">
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                            <li>
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                            <li>
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                            <li>
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                            <li>
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                            <li>
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                            <li>
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                            <li>
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                            <li>
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                            <li>
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                            <li>
+                                                <img class="img-c" src="img/car.jpg" alt=""/>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- this is row product item short description -->
+                            <div class="row rs-des">
+                                <div class="row-box">
+                                    <blockquote>
+                                        <h1>公寓出租 - BKK1 - 1房 - $1200起</h1>
+                                        <ul>
+                                            <li class="price"><strong>月租范围</strong> <h2>$1200 - $1500</h2></li>
+                                            <li class="data-id df-s"><strong>编号:</strong> <h2>CVAN1689</h2></li>
+                                        </ul>
+                                        <p>为您在金边最炙手可热的黄金地段提供高品质的城市生活体验。这套设计优雅、家具齐全的一居室服务式公寓完美融合了现代舒适感与极佳的便利性，是外籍人士和商务白领的理想居所。</p>
+                                    </blockquote>
+                                    <div class="rsd-action">
+                                        <div class="box">
+                                            <!-- this is customer service  -->
+                                            <div class="btn btn-cs" data-type="customer-service">
+                                                <span>在线客服</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="currentColor">
+                                                    <path d="M4 20c0-3.31 2.69-6 6-6h4c3.31 0 6 2.69 6 6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/>
+                                                    <circle cx="12" cy="8" r="4"/>
+                                                    <path d="M6.5 9A5.5 5.5 0 0 1 12 3.5 5.5 5.5 0 0 1 17.5 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                                    <rect x="5" y="7.5" width="2" height="3" rx="1"/>
+                                                    <rect x="17" y="7.5" width="2" height="3" rx="1"/>
+                                                    <path d="M18 10c0 1.5-1 2.5-2.5 2.5H13" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+                                                </svg>
+                                            </div>
+                                            <!-- this is button for booking form  -->
+                                            <div class="btn btn-bf" data-type="booking-form">
+                                                <span>在线客服</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.97 2h-2c-5 0-7 2-7 7v6c0 5 2 7 7 7h6c5 0 7-2 7-7v-2"/><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21.88 3.56c-1.23 3.07-4.32 7.25-6.9 9.32l-1.58 1.26c-.2.15-.4.27-.63.36 0-.15-.01-.3-.03-.46-.09-.67-.39-1.3-.93-1.83-.55-.55-1.21-.86-1.89-.95-.16-.01-.32-.02-.48-.01.09-.25.22-.48.39-.67L11.09 9c2.07-2.58 6.26-5.69 9.32-6.92.47-.18.93-.04 1.22.25.3.3.44.76.25 1.23z"/><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.78 14.49c0 .88-.34 1.72-.97 2.36-.49.49-1.15.83-1.94.93l-1.97.21a1.7 1.7 0 01-1.87-1.88l.21-1.97c.19-1.75 1.65-2.87 3.21-2.9.16-.01.32 0 .48.01.68.09 1.34.4 1.89.95.54.54.84 1.16.93 1.83.02.16.03.32.03.46zM15.82 11.98c0-2.09-1.69-3.79-3.79-3.79"/></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- this is show more information of the product item detail -->
+                            <div class="row rs-info">
+                                <div class="rsi-box">
+                                    <div class="data-detail">
+                                        <!-- this is row one  -->
+                                        <div class="ddt-row">
+                                            <div class="hx">
+                                                <h2>车型基本信息</h2>
+                                            </div>
+                                            <div class="ddtcx">
+                                                <div class="ddtcx-box">
+                                                    <div class="db-c">
+                                                        <div class="tbl">汽车类型</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                    <div class="db-c">
+                                                        <div class="tbl">品牌</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                    <div class="db-c">
+                                                        <div class="tbl">型号</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                    <div class="db-c">
+                                                        <div class="tbl">年份</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- this is row two  -->
+                                        <div class="ddt-row">
+                                            <div class="hx">
+                                                <h2>性能参数</h2>
+                                            </div>
+                                            <div class="ddtcx">
+                                                <div class="ddtcx-box">
+                                                    <div class="db-c">
+                                                        <div class="tbl">月租范围</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                    <div class="db-c">
+                                                        <div class="tbl">燃料类型</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                    <div class="db-c">
+                                                        <div class="tbl">发动机排气量（L）</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                    <div class="db-c">
+                                                        <div class="tbl">发动机汽缸数量</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- this is row three  -->
+                                        <div class="ddt-row">
+                                            <div class="hx">
+                                                <h2>其他信息</h2>
+                                            </div>
+                                            <div class="ddtcx">
+                                                <div class="ddtcx-box">
+                                                    <div class="db-c">
+                                                        <div class="tbl">座位数</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                    <div class="db-c">
+                                                        <div class="tbl">配置</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                    <div class="db-c">
+                                                        <div class="tbl">编号</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                    <div class="db-c">
+                                                        <div class="tbl">具体价格</div>
+                                                        <div class="tbl-value">...</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- this is for show product suggestion -->
+                    <div class="data-sug">
+                        <div class="dsg-box">
+                            <div class="dsgh">
+                                <div class="dsgh-box df-s">
+                                    <h2>更多车型推荐</h2>
+                                    <!-- this is icon for close form suggestion -->
+                                    <div class="icon icon-ra icon-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M6 12h12M12 18V6" stroke="#FF8A65" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-grid" id="carGrid">
+
+                                <div class="car-card" data-car-id="2165" data-field-id="CVAN1689">
+                                    <div class="car-image-container">
+                                        <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CVAN1689/1.jpg" alt="S400" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;"/>
+                                    </div>
+                                    <div class="car-info">
+                                        <h3 class="car-name">2015 up 2020 S400</h3>
+                                        <div class="car-specs">
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">汽车类型</div>
+                                                <div class="spec-value">轿车</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">品牌</div>
+                                                <div class="spec-value">奔驰 Mercedes</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">编码</div>
+                                                <div class="spec-value">CVAN1689</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">具体价格：</div>
+                                                <div class="spec-value">详询客服</div>
+                                            </div>
+                                
+                                        </div>
+                                        <div class="car-price">
+                                            <div class="price-text">1,500 - 2,000</div>
+                                            <div class="price-label">月租范围</div>
+                                        </div>
+                                        <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(2165, 'CVAN1689')">查看更多信息</button>
+                                    </div>
+                                </div>
+
+                                <div class="car-card" data-car-id="2165" data-field-id="CVAN1689">
+                                    <div class="car-image-container">
+                                        <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CVAN1689/1.jpg" alt="S400" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;"/>
+                                    </div>
+                                    <div class="car-info">
+                                        <h3 class="car-name">2015 up 2020 S400</h3>
+                                        <div class="car-specs">
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">汽车类型</div>
+                                                <div class="spec-value">轿车</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">品牌</div>
+                                                <div class="spec-value">奔驰 Mercedes</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">编码</div>
+                                                <div class="spec-value">CVAN1689</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">具体价格：</div>
+                                                <div class="spec-value">详询客服</div>
+                                            </div>
+                                
+                                        </div>
+                                        <div class="car-price">
+                                            <div class="price-text">1,500 - 2,000</div>
+                                            <div class="price-label">月租范围</div>
+                                        </div>
+                                        <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(2165, 'CVAN1689')">查看更多信息</button>
+                                    </div>
+                                </div>
+
+                                <div class="car-card" data-car-id="2165" data-field-id="CVAN1689">
+                                    <div class="car-image-container">
+                                        <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CVAN1689/1.jpg" alt="S400" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;"/>
+                                    </div>
+                                    <div class="car-info">
+                                        <h3 class="car-name">2015 up 2020 S400</h3>
+                                        <div class="car-specs">
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">汽车类型</div>
+                                                <div class="spec-value">轿车</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">品牌</div>
+                                                <div class="spec-value">奔驰 Mercedes</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">编码</div>
+                                                <div class="spec-value">CVAN1689</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">具体价格：</div>
+                                                <div class="spec-value">详询客服</div>
+                                            </div>
+                                
+                                        </div>
+                                        <div class="car-price">
+                                            <div class="price-text">1,500 - 2,000</div>
+                                            <div class="price-label">月租范围</div>
+                                        </div>
+                                        <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(2165, 'CVAN1689')">查看更多信息</button>
+                                    </div>
+                                </div>
+
+                                <div class="car-card" data-car-id="2165" data-field-id="CVAN1689">
+                                    <div class="car-image-container">
+                                        <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CVAN1689/1.jpg" alt="S400" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;"/>
+                                    </div>
+                                    <div class="car-info">
+                                        <h3 class="car-name">2015 up 2020 S400</h3>
+                                        <div class="car-specs">
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">汽车类型</div>
+                                                <div class="spec-value">轿车</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">品牌</div>
+                                                <div class="spec-value">奔驰 Mercedes</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">编码</div>
+                                                <div class="spec-value">CVAN1689</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">具体价格：</div>
+                                                <div class="spec-value">详询客服</div>
+                                            </div>
+                                
+                                        </div>
+                                        <div class="car-price">
+                                            <div class="price-text">1,500 - 2,000</div>
+                                            <div class="price-label">月租范围</div>
+                                        </div>
+                                        <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(2165, 'CVAN1689')">查看更多信息</button>
+                                    </div>
+                                </div>
+
+                                <div class="car-card" data-car-id="2165" data-field-id="CVAN1689">
+                                    <div class="car-image-container">
+                                        <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CVAN1689/1.jpg" alt="S400" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;"/>
+                                    </div>
+                                    <div class="car-info">
+                                        <h3 class="car-name">2015 up 2020 S400</h3>
+                                        <div class="car-specs">
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">汽车类型</div>
+                                                <div class="spec-value">轿车</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">品牌</div>
+                                                <div class="spec-value">奔驰 Mercedes</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">编码</div>
+                                                <div class="spec-value">CVAN1689</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">具体价格：</div>
+                                                <div class="spec-value">详询客服</div>
+                                            </div>
+                                
+                                        </div>
+                                        <div class="car-price">
+                                            <div class="price-text">1,500 - 2,000</div>
+                                            <div class="price-label">月租范围</div>
+                                        </div>
+                                        <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(2165, 'CVAN1689')">查看更多信息</button>
+                                    </div>
+                                </div>
+
+                                <div class="car-card" data-car-id="2165" data-field-id="CVAN1689">
+                                    <div class="car-image-container">
+                                        <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CVAN1689/1.jpg" alt="S400" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;"/>
+                                    </div>
+                                    <div class="car-info">
+                                        <h3 class="car-name">2015 up 2020 S400</h3>
+                                        <div class="car-specs">
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">汽车类型</div>
+                                                <div class="spec-value">轿车</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">品牌</div>
+                                                <div class="spec-value">奔驰 Mercedes</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">编码</div>
+                                                <div class="spec-value">CVAN1689</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">具体价格：</div>
+                                                <div class="spec-value">详询客服</div>
+                                            </div>
+                                
+                                        </div>
+                                        <div class="car-price">
+                                            <div class="price-text">1,500 - 2,000</div>
+                                            <div class="price-label">月租范围</div>
+                                        </div>
+                                        <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(2165, 'CVAN1689')">查看更多信息</button>
+                                    </div>
+                                </div>
+
+                                <div class="car-card" data-car-id="2165" data-field-id="CVAN1689">
+                                    <div class="car-image-container">
+                                        <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CVAN1689/1.jpg" alt="S400" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;"/>
+                                    </div>
+                                    <div class="car-info">
+                                        <h3 class="car-name">2015 up 2020 S400</h3>
+                                        <div class="car-specs">
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">汽车类型</div>
+                                                <div class="spec-value">轿车</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">品牌</div>
+                                                <div class="spec-value">奔驰 Mercedes</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">编码</div>
+                                                <div class="spec-value">CVAN1689</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">具体价格：</div>
+                                                <div class="spec-value">详询客服</div>
+                                            </div>
+                                
+                                        </div>
+                                        <div class="car-price">
+                                            <div class="price-text">1,500 - 2,000</div>
+                                            <div class="price-label">月租范围</div>
+                                        </div>
+                                        <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(2165, 'CVAN1689')">查看更多信息</button>
+                                    </div>
+                                </div>
+
+                                <div class="car-card" data-car-id="2165" data-field-id="CVAN1689">
+                                    <div class="car-image-container">
+                                        <img class="car-image" src="https://d1ytnvewg96nod.cloudfront.net/images/CVAN1689/1.jpg" alt="S400" onerror="this.classList.add('error')" style="cursor: pointer; object-fit: contain;"/>
+                                    </div>
+                                    <div class="car-info">
+                                        <h3 class="car-name">2015 up 2020 S400</h3>
+                                        <div class="car-specs">
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">汽车类型</div>
+                                                <div class="spec-value">轿车</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">品牌</div>
+                                                <div class="spec-value">奔驰 Mercedes</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">编码</div>
+                                                <div class="spec-value">CVAN1689</div>
+                                            </div>
+                                
+                                            <div class="spec-item">
+                                                <div class="spec-label">具体价格：</div>
+                                                <div class="spec-value">详询客服</div>
+                                            </div>
+                                
+                                        </div>
+                                        <div class="car-price">
+                                            <div class="price-text">1,500 - 2,000</div>
+                                            <div class="price-label">月租范围</div>
+                                        </div>
+                                        <button class="reserve-btn" onclick="event.stopPropagation(); goToDetail(2165, 'CVAN1689')">查看更多信息</button>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- this is model for share -->
+    <div class="sg-msh" id="sg-msh">
+        <div class="sg-ms-modal-container">
+            <button class="sg-ms-close-btn btn" aria-label="Close modal" onclick="document.querySelector('.sg-msh').classList.toggle('active')">
+                <svg viewBox="0 -0.5 21 21" version="1.1" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>close [#1511]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <polygon id="close-[#1511]" points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446"> </polygon> </g> </g> </g> </g></svg>
+            </button>
+            <div class="ms-head">
+                <div class="msh-box df-l">
+                    <div class="img">
+                        <img src="img/car.jpg" class="img-c" alt="" />
+                    </div>
+                    <blockquote>
+                        <h2>2015 up 2020 S400</h2>
+                        <div class="price">
+                            <span>月租范围</span>
+                            <h3>1,500 - 2,000</h3>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        
+            <h3 class="sg-ms-section-heading">分享</h3>
+        
+            <div class="sg-ms-carousel-wrapper">
+                <div class="sg-ms-share-options">
+
+                    <div class="sg-ms-share-item">
+                        <div class="sg-ms-icon-circle btn sg-ms-bg-telegram">
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                        <span>Telegram</span>
+                    </div>
+
+                    <div class="sg-ms-share-item">
+                        <div class="sg-ms-icon-circle btn sg-ms-bg-facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <span>Facebook</span>
+                    </div>
+
+                    <div class="sg-ms-share-item">
+                        <div class="sg-ms-icon-circle btn sg-ms-bg-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <span>WhatsApp</span>
+                    </div>
+
+                </div>
+            </div>
+        
+            <div class="sg-ms-copy-link-container">
+                <input type="text" class="sg-ms-link-input" />
+                <button class="sg-ms-copy-btn btn">复制链接</button>
+            </div>
+        </div>
+        <div class="overlay" onclick="document.querySelector('.sg-msh').classList.toggle('active')"></div>
+    </div>
+    <!-- this is model for show image full of product -->
+    <div class="sg-msi">
+        <div class="btn-action icon icon-ra icon-sm" onclick="document.querySelector('.sg-msi').classList.toggle('active')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M6 12h12M12 18V6" stroke="#FF8A65" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <div class="msi-box">
+            <ul>
+                
+            </ul>
+        </div>
+        <div class="overlay" onclick="document.querySelector('.sg-msi').classList.toggle('active')"></div>
+    </div>
+    <script src="js/layout/header_v1.js"></script>
+    <script src="js/web_aside.js"></script>
+    <script src="js/web_foot.js"></script>
+</body>
+</html>

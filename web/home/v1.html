@@ -1,0 +1,231 @@
+<t>
+&lt;!DOCTYPE html&gt;
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/>
+    <title>长租自驾 </title>
+    <!-- this is style for webpage  -->
+    <link rel="stylesheet" href="/web/content/336614/App.css"/>
+    <link rel="stylesheet" href="/web/content/336618/Home.css"/>
+    <!-- icon font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <!-- icon website preview-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png"/>
+    <link rel="icon" sizes="192x192" href="img/favicon.png"/>
+    <link rel="icon" sizes="512x512" href="img/favicon.png"/>
+    <!--telegram and phone icon-->
+    <meta property="og:site_name" content="zuAcar"/>
+    <meta property="og:title" content="租辆车zuAcar-柬埔寨最专业租车网"/>
+    <!--<meta property="og:description" content="提供最优质的车辆租赁服务，安全便捷。"/>-->
+    <meta property="og:image" content="https://www.zuacar.com/web/content/238293/logo_share.png"/> 
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.zuacar.com/en/testing-zuacar"/>
+    <script src="/web/content/336811/API.js"/>
+</head>
+<body>
+    <!--欢迎页面 -->
+    <div class="splash-overlay" id="splashOverlay">
+        <div class="splash-container">
+            <div class="sover-time-count">逼近...</div>
+            <img src="/web/content/336620/splash-overlay.jpg" alt="欢迎图片" class="splash-image"/>
+        </div>
+    </div>
+
+    <!-- Aside Menu 由外部 zuahouse_aside.js 自动加载 -->
+    <div class="side-menu-main" id="side-main">
+    </div>
+
+    <div class="banner-container">
+        <div class="banner-slider" id="slider" style="transform: translateX(-100%);">
+            <img src="https://www.zuacar.com/web/content/235513/2.jpg" alt="Car 2" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;"/>
+            <img src="https://www.zuacar.com/web/content/236971/10.jpg" alt="Car 10" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;"/>
+            <img src="https://www.zuacar.com/web/content/235515/4.jpg" alt="Car 4" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;"/>
+            <img src="https://www.zuacar.com/web/content/235516/5.jpg" alt="Car 5" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;"/>
+            <img src="https://www.zuacar.com/web/content/235517/6.jpg" alt="Car 6" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;"/>
+            <img src="https://www.zuacar.com/web/content/233822/1.jpg" alt="Car 1" loading="lazy" style="opacity: 1; transition: opacity 0.8s ease-in-out;"/>
+        </div>
+        <!-- Banner 圆形分页指示器 -->
+        <div class="banner-dots-container" id="bannerDotsContainer">
+            <!-- 圆形分页点由JavaScript动态生成 -->
+        </div>
+    </div>
+
+    <section class="service-tabs">
+        <div class="tab-header">
+            <button class="active" onclick="switchTab('rent')">租辆车-热门搜索</button>
+            <button onclick="switchTab('more')">点我-更多盈信服务</button>
+        </div>
+        
+        <div id="rent-content" class="tab-grid active">
+            
+            <div class="grid-item" onclick="location.href='https://zuacar.com/'" style="cursor: pointer;">
+                <div class="icon-box"><img src="/web/content/336635/icon_1.png" alt=""/></div>
+                <p>租辆车</p>
+            </div>
+            <div class="grid-item" onclick="location.href='worry-free.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="/web/content/336796/icon_2.png" alt=""/></div>
+                <p>安心购车服务</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="/web/content/336797/icon_3.png" alt=""/></div>
+                <p>好车特价</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="/web/content/336798/icon_4.png" alt=""/></div>
+                <p>可分期的车</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="/web/content/336799/icon_5.png" alt=""/></div>
+                <p>汽车金融</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="/web/content/336801/icon_6.png" alt=""/></div>
+                <p>键分类</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="/web/content/336805/icon_7.png" alt=""/></div>
+                <p>参数筛选</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="/web/content/336799/icon_8.png" alt=""/></div>
+                <p>新下柜车</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="/web/content/336806/icon_9.png" alt=""/></div>
+                <p>四驱</p>
+            </div>
+            <div class="grid-item" onclick="location.href='fitter.html'" style="cursor: pointer;">
+                <div class="icon-box"><img src="/web/content/336807/icon_10.png" alt=""/></div>
+                <p>汽车综合服务</p>
+            </div>
+        </div>
+
+         <div id="more-content" class="tab-grid">
+            <div class="grid-item" onclick="window.location.href='https://m.fi855.com/';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234306/1.png" alt=""/></div>
+                <p>盈信官网</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='https://www.zuahouse.com/en';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/265875/租个房_zuAhouse.png" alt=""/></div>
+                <p>租个房</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='https://m.luacar.com/';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234307/2撸辆车.png" alt=""/></div>
+                <p>买车-撸辆车</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='https://m.fi855.com/col.jsp?id=113';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234308/3盈信金融.png" alt=""/></div>
+                <p>盈信汽车金融</p>
+            </div>
+            <!--<div class="grid-item" onclick="window.location.href='https://m.luahouse.com/';" style="cursor: pointer;">-->
+            <!--    <div class="icon-box"><img src="https://www.zuacar.com/web/content/234309/4撸个房.png" alt=""/></div>-->
+            <!--    <p>撸个房</p>-->
+            <!--</div>-->
+            <div class="grid-item" onclick="window.location.href='https://m.fi855.com/col.jsp?id=117';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234310/5财税.png" alt=""/></div>
+                <p>盈信财税</p>
+            </div>
+            <div class="grid-item" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234311/6盈信企程.png" alt=""/></div>
+                <p>盈信企程</p>
+            </div>
+            <div class="grid-item" onclick="window.location.href='https://m.fi855.com/col.jsp?id=121';" style="cursor: pointer;">
+                <div class="icon-box"><img src="https://www.zuacar.com/web/content/234312/7盈信证照.png" alt=""/></div>
+                <p>盈信证照</p>
+            </div>
+            <!--<div class="grid-item" style="cursor: pointer;">-->
+            <!--    <div class="icon-box"><img src="https://www.zuacar.com/web/content/234313/8盈信商旅.png" alt=""/></div>-->
+            <!--    <p>盈信商旅</p>-->
+            <!--</div>-->
+        </div>
+    </section>
+
+    <!-- this is middle logo -->
+    <section class="midlogo-section">
+        <div class="midlogo-container">
+            <img class="midlogo" src="/web/content/336812/adv.png" alt="" style=" margin: -10px 1px; width: 100%;"/>
+        </div>
+    </section>
+
+    <main class="car-details">
+        
+        <!-- <h2 class="section-title">车库现车</h2> -->
+        <div class="car-grid" id="carGrid">
+            <!-- 车辆卡片由JavaScript动态填充 -->
+        </div>
+
+        <div class="pagination" id="paginationContainer">
+            <button class="pagination-btn" id="prevBtn" onclick="previousPage()">‹</button>
+            <div class="pagination-numbers" id="pageNumbers"/>
+            <button class="pagination-btn" id="nextBtn" onclick="nextPage()">›</button>
+            <span class="page-info" id="pageInfo">1 / 1</span>
+        </div>
+
+       <div class="faq-section">
+            <h2 class="faq-title">租车流程 &amp; 关于我们</h2>
+            <div class="faq-item" onclick="window.location.href='https://www.zuacar.com/en/zuacar-question-page1'" style="cursor: pointer;">
+                <div class="faq-question">
+                    <h4>为什么选择"租辆车zuAcar" ?</h4>
+                    
+                </div>
+                <img src="/web/content/336619/favicon.png" alt="logo" style="width: 40px; height: auto; opacity: 1; transition: opacity 0.8s ease-in-out;" loading="lazy"/>
+            </div>
+            <div class="faq-item" onclick="window.location.href='https://www.zuacar.com/en/zuacar-question-page2'" style="cursor: pointer;">
+                <div class="faq-question">
+                    <h4>车主信托，无忧托付！</h4>
+                    
+                </div>
+                <img src="/web/content/336619/favicon.png" alt="logo" style="width: 40px; height: auto; opacity: 1; transition: opacity 0.8s ease-in-out;" loading="lazy"/>
+            </div>
+            <div class="faq-item" onclick="window.location.href='https://www.zuacar.com/en/zuacar-question-page3'" style="cursor: pointer;">
+                <div class="faq-question">
+                    <h4>足不出户，简单3步，租到您满意的车辆！</h4>
+                    
+                </div>
+                <img src="/web/content/336619/favicon.png" alt="logo" style="width: 40px; height: auto; opacity: 1; transition: opacity 0.8s ease-in-out;" loading="lazy"/>
+            </div>
+        </div>
+    </main>
+    
+    <div class="wb-main-action">
+        <div class="wbma-box">
+            <div class="icon icon-ra icon-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M18.07 9.57L12 3.5 5.93 9.57M12 20.5V3.67"/></svg>
+            </div>
+            <div class="icon icon-ra icon-sm">
+               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M21.97 18.33c0 .36-.08.73-.25 1.09-.17.36-.39.7-.68 1.02-.49.54-1.03.93-1.64 1.18-.6.25-1.25.38-1.95.38-1.02 0-2.11-.24-3.26-.73s-2.3-1.15-3.44-1.98a28.75 28.75 0 0 1-3.28-2.8 28.414 28.414 0 0 1-2.79-3.27c-.82-1.14-1.48-2.28-1.96-3.41C2.24 8.67 2 7.58 2 6.54c0-.68.12-1.33.36-1.93.24-.61.62-1.17 1.15-1.67C4.15 2.31 4.85 2 5.59 2c.28 0 .56.06.81.18.26.12.49.3.67.56l2.32 3.27c.18.25.31.48.4.7.09.21.14.42.14.61 0 .24-.07.48-.21.71-.13.23-.32.47-.56.71l-.76.79c-.11.11-.16.24-.16.4 0 .08.01.15.03.23.03.08.06.14.08.2.18.33.49.76.93 1.28.45.52.93 1.05 1.45 1.58.54.53 1.06 1.02 1.59 1.47.52.44.95.74 1.29.92.05.02.11.05.18.08.08.03.16.04.25.04.17 0 .3-.06.41-.17l.76-.75c.25-.25.49-.44.72-.56.23-.14.46-.21.71-.21.19 0 .39.04.61.13.22.09.45.22.7.39l3.31 2.35c.26.18.44.39.55.64.1.25.16.5.16.78Z" stroke="#FF8A65" stroke-width="1.5" stroke-miterlimit="10"/><path d="M18.5 9c0-.6-.47-1.52-1.17-2.27-.64-.69-1.49-1.23-2.33-1.23M22 9c0-3.87-3.13-7-7-7" stroke="#FF8A65" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        window.addEventListener('load', function() {
+            let timeLeft = 3; 
+            
+            const overlay = document.getElementById('splashOverlay');
+            const countdownElement = document.querySelector('.sover-time-count');
+
+            const timer = setInterval(() =&gt; {
+                timeLeft--;
+                
+                if (timeLeft &lt;= 0) {
+                    clearInterval(timer);
+                    document.body.style.overflow = 'auto';
+                    overlay.classList.add('hidden');
+                } else {
+                    countdownElement.textContent = `逼近 ${timeLeft}s...`;
+                }
+            }, 1000);
+        });
+        
+    </script>
+    <!-- this is website script for only action of webpage -->
+    <script src="/web/content/336810/script_webpage.js"/>
+    <!--this is init aside script of webpage -->
+    <script src="/web/content/336616/web_aside.js"/>
+    <script src="/web/content/336615/web_header.js"/>
+    <script src="/web/content/336617/web_foot.js"/>
+</body>
+</html>
+</t>

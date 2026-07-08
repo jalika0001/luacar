@@ -1,0 +1,79 @@
+.wbt-h{
+    display: none !important;
+}
+.web-header{
+    position: initial !important;
+}
+.main-siBar{
+    position: sticky;
+    top: 0rem;
+    color: var(--sg-bglight);
+    background-color: var(--gold);
+    z-index: 990;
+}
+.main-siBar .msi-box{
+    max-width: 1150px;
+    margin: 0 auto;
+    height: 60px;
+    @media screen and (max-width: 1150px){
+        margin: 0rem 0.8rem;
+    }
+    @media screen and (max-width: 650px){
+        margin: 0rem 0.5rem;
+    }
+}
+.main-siBar .msi-box .btn{
+    cursor: pointer;
+    border-radius: 50rem;
+    padding: 0rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color:var(--gold);
+}
+.main-siBar .msi-box .btn svg{
+    width: 1.8rem;
+}.main-siBar .msi-box .btn path{
+   stroke: var(--sg-bglight);
+}
+
+
+/* ==========this is webpage style=================? */
+.wbsh-item{
+    display: block;
+    margin: 0rem auto;
+    min-height: 100vh;
+}
+
+.car-grid{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    @media screen and (max-width: 1150px) {
+        margin: 0rem 0.8rem;
+        padding: 1rem 0rem;
+    }
+    @media screen and (max-width: 650px) {
+        margin: 0rem 0.5rem;
+        padding: 0.5rem 0rem;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .main-siBar .msi-box{
+        margin: 0rem 0.8rem;
+    }
+    .car-grid{
+        margin: 0rem 0.8rem;
+        padding: 1rem 0rem;
+    }
+
+}
+@media screen and (max-width: 650px){
+    .main-siBar .msi-box{
+        margin: 0rem 0.5rem;
+    }
+    .car-grid{
+        margin: 0rem 0.5rem;
+        padding: 0.5rem 0rem;
+    }
+}

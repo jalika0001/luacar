@@ -1,0 +1,771 @@
+.wbt-h{
+    display: none !important;
+}
+.web-header{
+    position: initial !important;
+}
+.web-tablink{
+    display: none !important;
+}
+@media screen and (max-width: 650px) {
+    .wb-main-action.wb-show {
+        bottom: 100px !important;
+    }
+}
+body{
+    --sg-nav-btn-bg: #ffffff0a;
+    --sg-nav-btn-hover-bg: #ffffff1f;
+    --sg-bg-gray: #f5f7fa;
+    --sg-text-slide-count: rgba(0, 0, 0, 0.5);
+    --sg-bg-btn-slide: rgba(0, 0, 0, 0.5);
+}
+/* =========this is nav bar ============? */
+.wbml .dt-n{
+    position: sticky;
+    top: 0rem;
+    z-index: 990;
+    background: var(--sg-gradient-brand);
+}
+.wbml .dtn-box{
+    max-width: 1150px;
+    height: 60px;
+    margin: 0 auto;
+    color: var(--sg-bglight);
+}
+.wbml .dtn-box .icon{
+    cursor: pointer;
+}
+.wbml .dtn-box .icon:hover{
+    opacity: 0.8;
+}
+.wbml .dtn-box .icon svg{
+    width: 1.8rem;
+}
+.wbml .dtn-box .icon path{
+    stroke: var(--sg-bglight);
+}
+.wbml .dtn-box .btn{
+    cursor: pointer;
+    gap: 0.5rem;
+    background: transparent;
+}
+.wbml .dtn-box .btn:hover{
+    background: var(--sg-nav-btn-hover-bg);
+}
+.wbml .dtn-box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.wbml .dtn-box .btn path{
+    fill: var(--sg-bglight);
+}
+
+/* ==========this is content box ============? */
+.dtc-box{
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    @media screen and (max-width: 1150px){
+        margin: 0.8rem;
+    }
+    @media screen and (max-width: 938px){
+        max-width: 750px;
+        margin: 0.8rem auto;
+    }
+    @media screen and (max-width:  750px){
+        margin: 0.8rem;
+    }
+    @media screen and (max-width: 650px){
+        margin: 0.5rem;
+    }
+}
+.wbml .dtch-box{
+    gap: 0.8rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.wbml .rs-aside{
+    overflow: hidden;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.wbml .rs-aside .rsa-box ul{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    padding: 0.8rem 0rem;
+}
+.wbml .rs-aside .rsa-box ul li{
+    flex-shrink: 0;
+    width: calc(100% / 5 - 0.68rem);
+    aspect-ratio: 1 / 1;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.wbml .rs-aside .rsa-box ul li.active{
+    transform: scale(0.96);
+    filter: brightness(0.8);
+}
+.wbml .rs-aside .rsa-box ul li img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    scale: 1;
+    transition: all 0.3s ease-in-out;
+}
+/* main slid show  */
+.wbml .rs-main{
+    flex: 1 1 500px;
+    width: calc(100% - 500px);
+    min-width: 300px;
+}
+.wbml .rs-main .row-box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    background: var(--sg-bg-gray);
+}
+.wbml .rs-main ul{
+    width: 100%;
+    justify-content: left;
+}
+.wbml .rs-main ul li{
+    flex-shrink: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.wbml .rs-main .action{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.wbml .rs-main .an-box{
+    width: max-content;
+    max-width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    gap: 1rem;
+}
+.wbml .rs-main .list-dada{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+.wbml .rs-main .list-dada span{
+    display: block;
+    width: 0.5rem;
+    height: 0.2rem;
+    background: var(--sg-bglight);
+    margin: 0 0.2rem;
+    @media screen and (max-width: 650px){
+        width: 0.5rem;
+        height: 0.15rem;
+    }
+    @media screen and (max-width: 450px){
+        width: 0.5rem;
+        height: 0.1rem;
+     }
+}
+.wbml .rs-main .list-dada span.active{
+    width: 2rem;
+}
+.wbml .rs-main .tsc{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: max-content;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.8rem;
+    color: var(--sg-bglight);
+    font-size: 0.8rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50rem;
+}
+.wbml .rs-main .an-box .icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    cursor: pointer;
+    background: var(--sg-bg-btn-slide);
+}
+.wbml .rs-main .an-box .icon path{
+    stroke: var(--sg-bglight);
+}
+.wbml .rs-main .an-box .icon:hover{
+    background: var(--sg-nav-btn-hover-bg);
+}
+.wbml .rs-main .an-box .icon.unactive,
+.wbml .rs-main .an-box .icon.unactive:hover{
+    opacity: 0.5;
+    pointer-events: none;
+    transform: scale(0.98);
+}
+/* this is short datail  */
+.wbml .rs-des{
+    width: 400px;
+    max-width: 400px;
+    flex-grow: 1;
+    position: sticky;
+    top: calc(80px + 1.5rem);
+    @media screen and (max-width: 938px){
+        position: initial;
+        max-width: initial;
+        width: 100%;
+    }
+}
+.wbml .rs-des blockquote{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--sg-text-dark);
+}
+.wbml .rs-des blockquote h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--sg-text-dark);
+}
+.wbml .rs-des blockquote ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0.8rem 0rem;
+}
+.wbml .rs-des blockquote ul .price{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.2rem;
+    font-size: 0.8rem;
+    color: var(--sg-color-brand);
+    padding-bottom: 0.8rem;
+}
+.wbml .rs-des blockquote ul .price h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: inherit;
+    line-height: 1;
+}
+.wbml .rs-des blockquote p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: var(--sg-text-def);
+}
+.wbml .rs-des .rsd-action{
+    margin-top: 2rem;
+    @media screen and (max-width: 650px){
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: var(--sg-bglight);
+        z-index: 999;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    }
+}
+.wbml .rs-des .rsd-action .box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    @media screen and (max-width: 650px){
+        flex-direction: row;
+        height: 80px;
+        align-items: center;
+        padding: 0rem 0.8rem;
+    }
+}
+.wbml .rs-des .rsd-action .box .btn{
+    padding: 0rem;
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+    gap: 0.5rem;
+    border-radius: 0.2rem;
+    user-select: none;
+}
+.wbml .rs-des .rsd-action .box .btn-cs{
+    color: var(--sg-color-brand);
+    background: var(--sg-bg-tablink);
+    user-select: none;
+}
+.wbml .rs-des .rsd-action .box .btn-cs path{
+    stroke: var(--sg-color-brand);
+}
+.wbml .rs-des .rsd-action .box .btn-bf{
+    color: var(--sg-bglight);
+    background: var(--sg-color-brand);
+}
+.wbml .rs-des .rsd-action .box .btn-bf path{
+    stroke: var(--sg-bglight);
+}
+/* this is all information of product  */
+.wbml .rs-info{
+    flex-basis: 100%;
+    flex: 0 0 100%;
+}
+.wbml .rs-info .rsi-box{
+    width: calc(100% - 415px);
+    @media screen and (max-width: 938px){
+        width: 100%;
+    }
+}
+.wbml .rs-info .data-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 0 auto;
+    @media screen and (max-width: 768px){
+        padding: 0.8rem 0.5rem;
+    }
+}
+.wbml .rs-info .data-detail .hx{
+    padding: 0.8rem 0rem;
+    border-bottom: 2px solid var(--sg-color-brand);
+}
+.wbml .rs-info .data-detail .hx h2{
+    font-size: 1.1rem;
+    color: var(--sg-color-brand);
+}
+.wbml .rs-info .data-detail .ddtcx-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.wbml .rs-info .data-detail .ddtcx-box .db-c{
+    width: initial;
+    margin: 0;
+    padding: 0.8rem 0rem;
+    @media screen and (max-width: 768px){
+        padding: 0.8rem 0.5rem;
+    }
+}
+.wbml .rs-info .data-detail .ddtcx-box .tbl{
+    font-size: 0.8rem;
+    color: var(--sg-q-text);
+}
+.wbml .rs-info .data-detail .ddtcx-box .tbl-value{
+    margin: 0.2rem 0rem;
+}
+/* ============this is data suggestion box ============? */
+.wbml .data-sug{
+    margin-top: 2rem;
+}
+.wbml .data-sug .dsgh{
+    margin-bottom: 1rem;
+}
+.wbml .data-sug .dsgh-box{
+    height: 80px;
+    display: flex;
+}
+.wbml .data-sug .dsgh-box h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.wbml .data-sug .dsgh-box .icon{
+    rotate: 45deg;
+    cursor: pointer;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.wbml .data-sug .dsgh-box .icon svg{
+    width: 2rem;
+}.wbml .data-sug .dsgh-box .icon path{
+    stroke: var(--sg-q-text);
+}
+.wbml .data-sug .dsgh-box .icon:hover path{
+    stroke: var(--sg-color-brand);
+}
+
+/* ===============this is model for share ================== */
+.sg-msh,
+.sg-msh .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0);
+    background: transparent;
+}
+.sg-msh.active{
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+.sg-msh .overlay {
+    opacity: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease;
+}
+.sg-msh.active .overlay{
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+.sg-ms-modal-container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  padding: 24px;
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.sg-msh.active .sg-ms-modal-container {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.sg-ms-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #0f0f0f;
+  cursor: pointer;
+}
+.sg-ms-modal-container .msh-box{
+    gap: 0.8rem;
+    padding: 1rem 0rem;
+    padding-bottom: 1.8rem;
+}
+.sg-ms-modal-container .msh-box .img{
+    width: 90px;
+    height: 90px;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+.sg-ms-modal-container .msh-box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--sg-text-dark);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.sg-ms-modal-container .msh-box .price{
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    line-height: 0.5;
+    color: var(--sg-color-brand);
+    padding: 0.5rem 0rem;
+}
+.sg-ms-modal-container .msh-box .price h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: inherit;
+}
+.sg-ms-divider {
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+.sg-ms-section-heading {
+  font-size: 18px;
+  font-weight: 400;
+  color: #0f0f0f;
+  margin-bottom: 16px;
+}
+.sg-ms-carousel-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+.sg-ms-share-options {
+  display: flex;
+  gap: 16px;
+  overflow-x: hidden;
+  width: 100%;
+  padding-right: 24px;
+  padding: 0.5rem 0rem;
+}
+.sg-ms-share-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 68px;
+  cursor: pointer;
+}
+.sg-ms-share-item span {
+  font-size: 12px;
+  color: #0f0f0f;
+  text-align: center;
+}
+.sg-ms-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #ffffff;
+  transition: transform 0.15s ease;
+}
+
+.sg-ms-share-item:hover .sg-ms-icon-circle {
+  transform: scale(1.05);
+}
+.sg-ms-bg-embed {
+  background-color: #f2f2f2;
+  color: #0f0f0f;
+  border: 1px solid #e5e5e5;
+}
+
+.sg-ms-bg-telegram {
+  background: #0088CC;
+  font-size: 24px;
+}
+.sg-ms-bg-whatsapp {
+  background-color: #25d366;
+  font-size: 26px;
+}
+.sg-ms-bg-facebook {
+  background-color: #1877f2;
+}
+.sg-ms-bg-x {
+  background-color: #000000;
+}
+.sg-ms-bg-email {
+  background-color: #888888;
+}
+.sg-ms-arrow-btn {
+  position: absolute;
+  right: -8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #0f0f0f;
+  font-size: 12px;
+  z-index: 2;
+}
+.sg-ms-arrow-btn:hover {
+  background-color: #f2f2f2;
+}
+.sg-ms-copy-link-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  padding: 8px 8px 8px 16px;
+  gap: 12px;
+}
+.sg-ms-copy-link-container:focus-within {
+  border-color: #0556bc;
+}
+.sg-ms-link-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #0f0f0f;
+  background: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sg-ms-copy-btn {
+  min-width: max-content;
+  background-color: #f2f2f2;
+  color: #0f0f0f;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.sg-ms-copy-btn:hover {
+  background-color: #e5e5e5;
+}
+/* ================this is model for show full images============= */
+.sg-msi,
+.sg-msi .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+    overflow-y: auto;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+.sg-msi.active{
+    display: block;
+    opacity: 1;
+    z-index: 999;
+    transition: opacity 0.5s ease;
+}
+body:has(.sg-msi.active){
+    overflow: hidden;
+}
+.sg-msi .btn-action{
+    position: sticky;
+    width: max-content;
+    margin-left: auto;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    background: var(--sg-bg-btn-slide);
+    z-index: 5;
+}
+.sg-msi .btn-action svg{
+    width: 2rem;
+    height: 2rem;
+    rotate: 45deg;
+}
+.sg-msi .msi-box{
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 0.5rem;
+    z-index: 2;
+}
+.sg-msi .msi-box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.sg-msi .msi-box ul li{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+.sg-msi .msi-box ul li img{
+    border-radius: 0.2rem;
+}
+.sg-msi .overlay {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+@media screen and (max-width: 1150px) {
+    .wbml .dtn-box{
+        margin: 0rem 0.5rem;
+    }
+    .dtc-box{
+        margin: 0.8rem;
+    }
+}
+@media screen and (max-width: 938px) {
+    .dtc-box{
+        max-width: 750px;
+        margin: 0.8rem auto;
+    }
+    .wbml .rs-des{
+        position: initial;
+        max-width: initial;
+        width: 100%;
+    }
+    .wbml .rs-info .rsi-box{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .wbml .rs-info .data-detail{
+        padding: 0.8rem 0.5rem;
+    }
+    .wbml .rs-info .data-detail .ddtcx-box .db-c{
+        padding: 0.8rem 0.5rem;
+    }
+}
+@media screen and (max-width:  750px){
+    .dtc-box{
+        margin: 0.8rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    body{
+        padding-bottom: 80px;
+    }
+    .sg-ms-modal-container {
+        width: 90%;
+        max-width: 90%;
+    }
+    .dtc-box{
+        margin: 0.5rem; 
+    }
+    .wbml .rs-main .list-dada span{
+        width: 0.5rem;
+        height: 0.15rem;
+    }
+    .wbml .rs-des .rsd-action{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: var(--sg-bglight);
+        z-index: 999;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    }
+    .wbml .rs-des .rsd-action .box{
+        flex-direction: row;
+        height: 80px;
+        align-items: center;
+        padding: 0rem 0.8rem;
+    }
+    .wbml .rs-aside .rsa-box ul{
+        padding: 0.5rem 0rem;
+        gap: 0.5rem;
+    }
+    .wbml .rs-aside .rsa-box ul li{
+        width: calc(100% / 5 - 0.42rem);
+    }
+}
+@media screen and (max-width: 450px){
+    .wbml .rs-main .list-dada span{
+        width: 0.5rem;
+        height: 0.1rem;
+    }
+}
